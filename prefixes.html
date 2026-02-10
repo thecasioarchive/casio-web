@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prefixes · The Casio Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        th {
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        th .sort-icon {
+            display: inline-block;
+            margin-left: 6px;
+            opacity: 0.3;
+            font-size: 0.7rem;
+            vertical-align: middle;
+        }
+
+        th.sorted-asc .sort-icon::after {
+            content: "▲";
+            opacity: 1;
+        }
+
+        th.sorted-desc .sort-icon::after {
+            content: "▼";
+            opacity: 1;
+        }
+
+        th:not(.sorted-asc):not(.sorted-desc) .sort-icon::after {
+            content: "↕";
+        }
+
+        th.sorted-asc .sort-icon,
+        th.sorted-desc .sort-icon {
+            opacity: 1;
+        }
+
+        td:first-child {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        td:last-child {
+            color: var(--dark-gray);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="The Casio Archive logo">
+            <span>The Casio Archive</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="archive.html">Archive</a>
+            <a href="history.html">History</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="prefixes.html">Prefixes</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Model Prefixes</h1>
+        <p class="subtitle">Casio model names often begin with one or more letter prefixes. These prefixes usually
+            indicate the watch’s series, display type, function set, or design family. While Casio has never released an
+            official, complete decoding system, consistent patterns across decades allow these prefixes to be
+            interpreted with reasonable accuracy.</p>
+        <p class="subtitle">Below is an alphabetical overview of the most commonly used Casio model prefixes.</p>
+
+        <input type="text" id="filterInput" placeholder="Filter by prefix, series, description…" />
+
+        <table id="prefixTable">
+            <thead>
+                <tr>
+                    <th data-col="0">Prefix<span class="sort-icon"></span></th>
+                    <th data-col="1">Series<span class="sort-icon"></span></th>
+                    <th data-col="2">Description<span class="sort-icon"></span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>—</td>
+                    <td>Digital watch with stainless steel or metallic design. Often associated with classic, slim
+                        digital models.</td>
+                </tr>
+                <tr>
+                    <td>AE</td>
+                    <td>—</td>
+                    <td>Digital watch, usually resin-cased, with basic functions. Common in affordable, everyday Casio
+                        lines.</td>
+                </tr>
+                <tr>
+                    <td>AQ</td>
+                    <td>—</td>
+                    <td>Ana-digi display. Typically combines analog hands with a small digital screen.</td>
+                </tr>
+                <tr>
+                    <td>AW</td>
+                    <td>—</td>
+                    <td>Ana-digi watch, usually with a sport-oriented or casual design. Often larger and more robust
+                        than AQ models.</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>—</td>
+                    <td>Digital watch, often compact and minimalist. Used in several modern and retro-inspired models.
+                    </td>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>Baby-G</td>
+                    <td>Smaller G-Shock-derived watches, originally designed for women but worn by all.</td>
+                </tr>
+                <tr>
+                    <td>CA</td>
+                    <td>—</td>
+                    <td>Calculator watch. One of Casio's most iconic categories, featuring a keypad on the case.</td>
+                </tr>
+                <tr>
+                    <td>DB</td>
+                    <td>Databank</td>
+                    <td>Capable of storing names, phone numbers, or notes.</td>
+                </tr>
+                <tr>
+                    <td>DBC</td>
+                    <td>Databank Calculator</td>
+                    <td>Combines databank memory with calculator functionality.</td>
+                </tr>
+                <tr>
+                    <td>DQ</td>
+                    <td>—</td>
+                    <td>Digital clock or desk clock rather than a wristwatch. Mostly used for Casio alarm clocks.</td>
+                </tr>
+                <tr>
+                    <td>DW</td>
+                    <td>—</td>
+                    <td>Digital Watch. Widely used across standard Casio lines and early G-Shock models.</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>—</td>
+                    <td>Digital or ana-digi models, often region- or market-specific. Less consistently defined than
+                        other prefixes.</td>
+                </tr>
+                <tr>
+                    <td>EF</td>
+                    <td>Edifice</td>
+                    <td>Sporty, metal-cased watches with a focus on motorsport-inspired design.</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>—</td>
+                    <td>Digital watch with basic functionality. Among the most famous and long-running Casio lines.</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>G-Shock</td>
+                    <td>Designed for shock resistance and extreme durability.</td>
+                </tr>
+                <tr>
+                    <td>GA</td>
+                    <td>G-Shock</td>
+                    <td>Combines analog hands with digital displays in rugged G-Shock cases.</td>
+                </tr>
+                <tr>
+                    <td>GB</td>
+                    <td>G-Shock</td>
+                    <td>G-Shock with Bluetooth connectivity. Allows synchronization with smartphones.</td>
+                </tr>
+                <tr>
+                    <td>GD</td>
+                    <td>G-Shock</td>
+                    <td>Fully digital G-Shock models.</td>
+                </tr>
+                <tr>
+                    <td>GF</td>
+                    <td>G-Shock Frogman</td>
+                    <td>Professional diving watches within the G-Shock lineup.</td>
+                </tr>
+                <tr>
+                    <td>GM</td>
+                    <td>G-Shock</td>
+                    <td>Features metal bezels or cases with G-Shock construction.</td>
+                </tr>
+                <tr>
+                    <td>GMW</td>
+                    <td>G-Shock</td>
+                    <td>Full metal G-Shock. Stainless steel versions of classic square G-Shock designs.</td>
+                </tr>
+                <tr>
+                    <td>GST</td>
+                    <td>G-Steel</td>
+                    <td>Hybrid metal and resin G-Shocks with layered case construction.</td>
+                </tr>
+                <tr>
+                    <td>GX</td>
+                    <td>G-Shock</td>
+                    <td>Extra-large G-Shock models. Designed for maximum size and impact resistance.</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>—</td>
+                    <td>Digital watch, often with health- or activity-related features. Used less frequently.</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>—</td>
+                    <td>Ladies digital watch. Smaller case sizes and lighter designs.</td>
+                </tr>
+                <tr>
+                    <td>LF</td>
+                    <td>—</td>
+                    <td>Digital watch with simplified functions or special display layouts. Used in limited or
+                        experimental models.</td>
+                </tr>
+                <tr>
+                    <td>LW</td>
+                    <td>—</td>
+                    <td>Lightweight digital watch, often aimed at smaller wrists. Frequently associated with compact
+                        designs.</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>—</td>
+                    <td>Analog or ana-digi watch, sometimes used for marine-oriented models. Meaning varies by era.</td>
+                </tr>
+                <tr>
+                    <td>MD</td>
+                    <td>Marine Digital</td>
+                    <td>Typically includes tide graphs, moon phase, or marine features.</td>
+                </tr>
+                <tr>
+                    <td>MR</td>
+                    <td>MR-G</td>
+                    <td>High-end G-Shock line. Premium materials, advanced finishing, and Made in Japan production.</td>
+                </tr>
+                <tr>
+                    <td>MTG</td>
+                    <td>MT-G</td>
+                    <td>Combines resin cores with metal exteriors for strength and refinement.</td>
+                </tr>
+                <tr>
+                    <td>OC</td>
+                    <td>Oceanus</td>
+                    <td>Premium analog watches featuring solar power and radio/Bluetooth time sync.</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>—</td>
+                    <td>Digital watch, often compact or entry-level. Used inconsistently across markets.</td>
+                </tr>
+                <tr>
+                    <td>PRG</td>
+                    <td>Pro Trek</td>
+                    <td>Outdoor watches with sensors such as compass, barometer, and altimeter.</td>
+                </tr>
+                <tr>
+                    <td>Q</td>
+                    <td>—</td>
+                    <td>Vintage digital watches from early Casio production. Mostly discontinued and collectible.</td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>—</td>
+                    <td>Retro or reissue-inspired models. Used selectively in modern recreations.</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>—</td>
+                    <td>Slim or compact digital models. Sometimes used for sport-focused designs.</td>
+                </tr>
+                <tr>
+                    <td>SGW</td>
+                    <td>Sport Gear</td>
+                    <td>Digital watches designed for outdoor and sport use.</td>
+                </tr>
+                <tr>
+                    <td>ST</td>
+                    <td>—</td>
+                    <td>Stopwatch-oriented digital models. Focused on timing functionality.</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>—</td>
+                    <td>Touch-oriented or experimental digital models. Rare and not widely standardized.</td>
+                </tr>
+                <tr>
+                    <td>TR</td>
+                    <td>—</td>
+                    <td>Training or sport-related digital watches. Limited usage.</td>
+                </tr>
+                <tr>
+                    <td>V</td>
+                    <td>—</td>
+                    <td>Value-oriented digital watches. Often budget-friendly with essential features.</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>—</td>
+                    <td>Water-resistant digital watch. Common across many classic Casio lines.</td>
+                </tr>
+                <tr>
+                    <td>WS</td>
+                    <td>—</td>
+                    <td>World Sports or World Time Sport models. Digital watches with multiple timing functions.</td>
+                </tr>
+                <tr>
+                    <td>WV</td>
+                    <td>Wave Ceptor</td>
+                    <td>Radio-controlled watches that automatically synchronize time signals.</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td>—</td>
+                    <td>Experimental or special-edition models. Often limited or market-specific.</td>
+                </tr>
+                <tr>
+                    <td>Z</td>
+                    <td>—</td>
+                    <td>Rarely used prefix, typically for regional or limited releases.</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        // --- Filter ---
+        document.getElementById("filterInput").addEventListener("keyup", function () {
+            const filter = this.value.toLowerCase();
+            document.querySelectorAll("tbody tr").forEach(row => {
+                row.style.display = row.textContent.toLowerCase().includes(filter) ? "" : "none";
+            });
+        });
+
+        // --- Sort ---
+        let currentCol = null;
+        let currentDir = "asc";
+
+        document.querySelectorAll("th[data-col]").forEach(th => {
+            th.addEventListener("click", () => {
+                const col = parseInt(th.dataset.col);
+                currentDir = currentCol === col && currentDir === "asc" ? "desc" : "asc";
+                currentCol = col;
+
+                document.querySelectorAll("th").forEach(h => h.classList.remove("sorted-asc", "sorted-desc"));
+                th.classList.add(currentDir === "asc" ? "sorted-asc" : "sorted-desc");
+
+                const tbody = document.querySelector("tbody");
+                const rows = Array.from(tbody.rows);
+                rows.sort((a, b) => {
+                    const aText = a.cells[col].textContent.trim();
+                    const bText = b.cells[col].textContent.trim();
+                    return currentDir === "asc" ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                });
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    </script>
+
+</body>
+
+</html>

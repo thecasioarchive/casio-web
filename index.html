@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Casio Archive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="The Casio Archive logo">
+            <span>The Casio Archive</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="archive.html">Archive</a>
+            <a href="history.html">History</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="prefixes.html">Prefixes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Casio as design history</h1>
+            <p>
+                An independent channel exploring Casio watches as timeless design objects.
+                <br>
+                No hype. No rankings. Just Casio, as design history.
+            </p>
+        </section>
+
+        <section class="social">
+            <p>Follow the archive</p>
+            <ul>
+                <li><a href="https://www.youtube.com/@TheCasioArchive" target="_blank">YouTube</a></li>
+                <li><a href="https://instagram.com/thecasioarchive" target="_blank">Instagram</a></li>
+                <li><a href="https://tiktok.com/@thecasioarchive" target="_blank">TikTok</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Featured from the Archive</h2>
+            <div id="articles"></div>
+        </section>
+    </main>
+
+    <script>
+        fetch("data.json")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("articles").innerHTML = data.articles.map(a => `
+                    <article>
+                        <h3>${a.title}</h3>
+                        <p>${a.body}</p>
+                        <small>Published · ${a.date}</small>
+                    </article>
+                `).join("");
+            });
+    </script>
+
+</body>
+
+</html>

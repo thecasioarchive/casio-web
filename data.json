@@ -1,0 +1,25 @@
+{
+  "watches": [
+    {
+      "model": "F-91W",
+      "module": 593,
+      "battery": "CR2016",
+      "year": 1989,
+      "notes": "Iconic resin case, global standard"
+    },
+    {
+      "model": "GA-2100",
+      "module": 5611,
+      "battery": "SR726W x2",
+      "year": 2019,
+      "notes": "Carbon core guard structure"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Casio F-91W — a timeless classic",
+      "body": "A digital watch reduced to its essential elements. Functional, durable, and unchanged for decades.",
+      "date": "February 2026"
+    }
+  ]
+}

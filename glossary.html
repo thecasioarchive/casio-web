@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glossary · The Casio Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .glossary-intro {
+            max-width: 640px;
+            color: var(--dark-gray);
+            margin-bottom: 56px;
+        }
+
+        .glossary-list {
+            max-width: 640px;
+        }
+
+        .glossary-term {
+            border-bottom: 1px solid var(--light-gray);
+            padding: 24px 0;
+        }
+
+        .glossary-term:first-child {
+            border-top: 2px solid var(--black);
+        }
+
+        .glossary-term dt {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .glossary-term dd {
+            margin: 0;
+            color: var(--dark-gray);
+            line-height: 1.7;
+        }
+
+        #glossaryFilter {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 32px;
+            border: 1px solid var(--light-gray);
+            font-size: 0.9rem;
+        }
+
+        #glossaryFilter:focus {
+            outline: none;
+            border-color: var(--black);
+        }
+
+        .glossary-term.hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="The Casio Archive logo">
+            <span>The Casio Archive</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="archive.html">Archive</a>
+            <a href="history.html">History</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="prefixes.html">Prefixes</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Casio Glossary</h1>
+        <p class="glossary-intro">This glossary explains common terms, abbreviations, and concepts frequently found in Casio watches. It is intended as a practical reference for collectors, users, and anyone exploring the technical side of Casio timepieces.</p>
+
+        <input type="text" id="glossaryFilter" placeholder="Filter terms…" />
+
+        <dl class="glossary-list">
+            <div class="glossary-term">
+                <dt>Module</dt>
+                <dd>The electronic "brain" of a Casio watch. Each module defines the watch's functions, layout, button logic, and display behavior. Multiple models may share the same module, even if their cases look different.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>WR (Water Resistance)</dt>
+                <dd>Indicates the level of water resistance of the watch. Common values include 30 m, 50 m, 100 m, and 200 m. These ratings describe pressure tolerance under test conditions and do not always translate directly to real-life activities.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>EL Backlight (Electro-Luminescent)</dt>
+                <dd>A backlight system that illuminates the entire display evenly with a soft glow, often green or blue. Widely used in classic Casio digital watches from the 1990s and 2000s.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>LED Backlight</dt>
+                <dd>A light source that illuminates part of the display, usually from the side or bottom. More energy-efficient than EL backlight, but often less uniform.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Battery Life</dt>
+                <dd>Estimated duration a watch can run on a single battery under standard usage. Actual battery life may vary depending on alarm use, backlight frequency, and temperature.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Solar / Tough Solar</dt>
+                <dd>Casio's solar-powered system that converts light into electrical energy. Excess energy is stored in a rechargeable cell, significantly extending operational life and reducing battery changes.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Quartz</dt>
+                <dd>A timekeeping system based on a quartz crystal oscillator. Casio quartz movements are known for accuracy, low maintenance, and reliability.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Auto Calendar</dt>
+                <dd>A function that automatically adjusts the date based on month length. Some older models may require manual correction for leap years.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>World Time</dt>
+                <dd>Allows the display of time across multiple time zones, typically representing major cities worldwide. Often combined with daylight saving time (DST) adjustment.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Databank</dt>
+                <dd>Casio watches capable of storing personal data such as names, phone numbers, or notes. Popular in the 1980s and 1990s as early digital organizers.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Dual Time</dt>
+                <dd>Displays a secondary time zone alongside the main time. Simpler than World Time and commonly found in basic digital models.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>G-Shock</dt>
+                <dd>A Casio sub-brand designed around extreme durability. G-Shock watches prioritize shock resistance, water resistance, and structural protection over slimness.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Shock Resistant</dt>
+                <dd>A construction standard indicating that the watch can withstand mechanical shocks and impacts during normal use. Central to the G-Shock philosophy.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Case Material</dt>
+                <dd>Refers to the material used for the watch body, commonly resin, stainless steel, or carbon-based composites. Material choice affects weight, durability, and wearability.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Resin</dt>
+                <dd>A lightweight synthetic material widely used by Casio. Known for impact resistance, flexibility, and comfort, especially in sport and everyday models.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Accuracy</dt>
+                <dd>Usually expressed as ± seconds per month. Casio digital watches are typically more accurate than mechanical watches under normal conditions.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Vintage (Casio Context)</dt>
+                <dd>Generally refers to older Casio models from the 1970s to early 2000s. The term describes age and design era, not necessarily value or rarity.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Discontinued</dt>
+                <dd>A model that is no longer in active production. Discontinued Casio watches may still be widely available on the secondary market.</dd>
+            </div>
+            <div class="glossary-term">
+                <dt>Made in Japan / Assembled in…</dt>
+                <dd>Indicates manufacturing or assembly location. Casio has produced watches in multiple countries, and origin does not necessarily reflect quality differences.</dd>
+            </div>
+        </dl>
+    </main>
+
+    <script>
+        document.getElementById("glossaryFilter").addEventListener("keyup", function () {
+            const filter = this.value.toLowerCase();
+            document.querySelectorAll(".glossary-term").forEach(term => {
+                term.classList.toggle("hidden", !term.textContent.toLowerCase().includes(filter));
+            });
+        });
+    </script>
+
+</body>
+
+</html>
